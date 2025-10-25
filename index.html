@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Titans Quiz</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="quiz-container">
+        
+        <div class="screen active" id="welcome-screen">
+            <h1>🧠 Trivia Titans! 🚀</h1>
+            <p>Test your knowledge with questions. Ready to become a Titan?</p>
+            <button id="start-btn" class="btn primary">Start Quiz</button>
+        </div>
+
+        <div class="screen" id="quiz-screen">
+            <h2 id="question-text"></h2>
+            
+            <div id="answer-buttons" class="btn-grid">
+                </div>
+            
+            <div class="controls">
+                <p id="progress-text">Question 1 of 10</p>
+                <button id="next-btn" class="btn primary" disabled>Next</button>
+            </div>
+            
+            <p id="feedback-text" class="feedback-message"></p>
+        </div>
+
+        <div class="screen" id="score-screen">
+            <h2>🏆 Quiz Complete! 🥳</h2>
+            <p>You scored <span id="final-score">0</span> out of 10!</p>
+            <p id="score-message"></p>
+            <button id="restart-btn" class="btn primary">Play Again</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
